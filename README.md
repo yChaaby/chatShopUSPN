@@ -1,2 +1,2 @@
 # chatShopUSPN
-A chatBot for shop USPN
+A chatBot for USPN shop
