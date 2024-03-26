@@ -1,2 +1,2 @@
 # chatShopUSPN
-qlawi
+A chatBot for shop USPN
