@@ -1,0 +1,149 @@
+{
+    "intents": [
+      {
+        "tag": "salutation",
+        "patterns": [
+          "Salut",
+          "Bonjour",
+          "Comment ça va",
+          "Est-ce qu'il y a quelqu'un ?",
+          "Bonjour",
+          "Bonne journée",
+          "Hey",
+          "Coucou",
+          "Salutations",
+          "Bonjour tout le monde"
+        ],
+        "responses": [
+          "Salut :-)",
+          "Bonjour, merci de votre visite",
+          "Bonjour, que puis-je faire pour vous ?",
+          "Bonjour, comment puis-je vous aider ?",
+          "Hey, comment ça va ?",
+          "Coucou ! Content de vous voir ici.",
+          "Salutations ! Comment puis-je vous aider ?"
+        ]
+      },
+      {
+        "tag": "au revoir",
+        "patterns": ["Au revoir", "À plus tard", "Bonne journée", "Adieu", "À bientôt"],
+        "responses": [
+          "À bientôt, merci de votre visite",
+          "Bonne journée",
+          "Au revoir ! Revenez bientôt.",
+          "Adieu ! Passez une bonne journée.",
+          "À bientôt ! Prenez soin de vous."
+        ]
+      },
+      {
+        "tag": "merci",
+        "patterns": ["Merci", "Merci beaucoup", "C'est utile", "Merci beaucoup !", "Je vous remercie"],
+        "responses": ["Heureux de pouvoir aider !", "À tout moment !", "Avec plaisir", "De rien !"]
+      },
+      {
+        "tag": "articles",
+        "patterns": [
+          "Quels articles avez-vous ?",
+          "Quels types d'articles avez-vous ?",
+          "Que vendez-vous ?",
+          "Je cherche des produits à acheter.",
+          "Des idées sur ce que vous avez à offrir ?"
+        ],
+        "responses": [
+          "Nous vendons du café et du thé",
+          "Nous avons du café et du thé",
+          "Nous proposons une variété de café et de thé."
+        ]
+      },
+      {
+        "tag": "paiements",
+        "patterns": [
+          "Acceptez-vous les cartes de crédit ?",
+          "Acceptez-vous Mastercard ?",
+          "Puis-je payer avec Paypal ?",
+          "Acceptez-vous seulement les espèces ?",
+          "Quels modes de paiement acceptez-vous ?"
+        ],
+        "responses": [
+          "Nous acceptons les cartes VISA, Mastercard et Paypal",
+          "Nous acceptons la plupart des principales cartes de crédit et Paypal",
+          "Vous pouvez payer par carte de crédit, Paypal ou en espèces."
+        ]
+      },
+      {
+        "tag": "livraison",
+        "patterns": [
+          "Combien de temps prend la livraison ?",
+          "Combien de temps prend l'expédition ?",
+          "Quand vais-je recevoir ma livraison ?",
+          "Quels sont vos délais de livraison ?",
+          "Livrez-vous le week-end ?"
+        ],
+        "responses": [
+          "La livraison prend 2 à 4 jours",
+          "L'expédition prend 2 à 4 jours",
+          "La livraison est généralement effectuée en 2 à 4 jours ouvrables."
+        ]
+      },
+      {
+        "tag": "drôle",
+        "patterns": [
+          "Raconte-moi une blague !",
+          "Dis-moi quelque chose de drôle !",
+          "Connais-tu une blague ?",
+          "Je pourrais utiliser une bonne blague !"
+        ],
+        "responses": [
+          "Pourquoi l'hipster s'est-il brûlé la bouche ? Il a bu le café avant qu'il ne soit cool.",
+          "Que dit le bison quand son fils part à l'université ? Bison.",
+          "Pourquoi les poissons n'ont-ils jamais été de bons musiciens ? Parce qu'ils finissent toujours dans des filets !"
+        ]
+      },
+      {
+        "tag": "aide",
+        "patterns": [
+          "Pouvez-vous m'aider ?",
+          "J'ai besoin d'aide.",
+          "Aidez-moi s'il vous plaît.",
+          "Besoin d'assistance."
+        ],
+        "responses": [
+          "Bien sûr, je suis là pour vous aider.",
+          "Absolument, que puis-je faire pour vous aider ?",
+          "Je suis là pour aider. Quel est le problème ?",
+          "Je vais essayer de vous aider du mieux que je peux."
+        ]
+      },
+      {
+        "tag": "produits",
+        "patterns": [
+          "Quels produits recommandez-vous ?",
+          "Quels sont vos produits les plus populaires ?",
+          "Quel produit est le meilleur ?",
+          "Avez-vous des recommandations de produits ?"
+        ],
+        "responses": [
+          "Nos produits les plus populaires sont notre café arabica et notre thé vert.",
+          "Nous avons reçu d'excellents retours sur notre café colombien et notre thé à la menthe.",
+          "Nos clients adorent notre café éthiopien et notre thé noir Earl Grey.",
+          "Nous recommandons vivement notre café italien et notre thé blanc de Chine."
+        ]
+      },
+      {
+        "tag": "question_specifique",
+        "patterns": [
+          "Pouvez-vous me dire si vous avez des promotions en ce moment ?",
+          "Y a-t-il des réductions disponibles actuellement ?",
+          "Avez-vous des offres spéciales en ce moment ?",
+          "Quelles sont vos offres actuelles ?"
+        ],
+        "responses": [
+          "Oui, nous avons actuellement des promotions sur certains articles.",
+          "Nous avons des offres spéciales en cours. Vous pouvez les consulter sur notre site Web.",
+          "Nos réductions actuelles sont affichées sur notre site Web.",
+          "Consultez nos offres spéciales en ligne pour les dernières promotions."
+        ]
+      }
+    ]
+  }
+  

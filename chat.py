@@ -8,7 +8,7 @@ from nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('intents.json', 'r') as json_data:
+with open('donnee.json', 'r') as json_data:
     intents = json.load(json_data)
 
 FILE = "data.pth"
@@ -28,11 +28,14 @@ model.eval()
 bot_name = "Sam"
 print("Let's chat! (type 'quit' to exit)")
 while True:
+    
     # sentence = "do you use credit cards?"
-    sentence = input("You: ")
-    if sentence == "quit":
+    sentence = input("user_name: ")
+    if sentence in ["quit","exit","quitter"]:
         break
-
+    if len(sentence.split(" "))==1:
+        print("Sam: veuillez préciser le contexte")
+        continue
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
@@ -45,9 +48,11 @@ while True:
 
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    if prob.item() > 0.75:
+    if prob.item() > 0.85:
         for intent in intents['intents']:
             if tag == intent["tag"]:
+                pass
                 print(f"{bot_name}: {random.choice(intent['responses'])}")
     else:
+        pass
         print(f"{bot_name}: I do not understand...")
