@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-
+'''
 
 class NeuralNet(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
@@ -9,6 +9,33 @@ class NeuralNet(nn.Module):
         self.l2 = nn.Linear(hidden_size, hidden_size) 
         self.l3 = nn.Linear(hidden_size, num_classes)
         self.relu = nn.ReLU()
+    
+    def forward(self, x):
+        out = self.l1(x)
+        out = self.relu(out)
+        out = self.l2(out)
+        out = self.relu(out)
+        out = self.l3(out)
+        # no activation and no softmax at the end
+        return out
+'''
+import torch.nn.init as init
+import torch.nn.functional as F 
+class NeuralNet(nn.Module):
+    def __init__(self, input_size, hidden_size, num_classes):
+        super(NeuralNet, self).__init__()
+        self.l1 = nn.Linear(input_size, hidden_size) 
+        self.l2 = nn.Linear(hidden_size, hidden_size) 
+        self.l3 = nn.Linear(hidden_size, num_classes)
+        self.relu = nn.ReLU()
+        
+        self.init_weights()
+    
+    def init_weights(self):
+        # Initialisation des poids avec une distribution normale
+        for layer in [self.l1, self.l2, self.l3]:
+            init.kaiming_normal_(layer.weight, nonlinearity='leaky_relu')
+            init.constant_(layer.bias, 0.0)
     
     def forward(self, x):
         out = self.l1(x)

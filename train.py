@@ -9,7 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem, flatten_list
 from model import NeuralNet
 
-with open('donnee.json', 'r') as f:
+with open('donnee.json', 'r',encoding='utf-8') as f:
     intents = json.load(f)
 
 all_words = []
@@ -29,16 +29,15 @@ for intent in intents['intents']:
         xy.append((w, tag))
 
 # stem and lower each word
-ignore_words = ['?', '.', '!']
+ignore_words = [' ?', '.', ' !']
 all_words = [stem(w) for w in all_words if w not in ignore_words]
 all_words = flatten_list(all_words)
 # remove duplicates and sort
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
-
-print(len(xy), "patterns")
+'''print(len(xy), "patterns")
 print(len(tags), "tags:", tags)
-print(len(all_words), "unique stemmed words:", all_words)
+print(len(all_words), "unique stemmed words:", all_words)'''
 
 # create training data
 X_train = []
@@ -53,7 +52,6 @@ for (pattern_sentence, tag) in xy:
 
 X_train = np.array(X_train)
 y_train = np.array(y_train)
-
 # Hyper-parameters 
 num_epochs = 1000
 batch_size = 8

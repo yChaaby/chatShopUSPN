@@ -1,9 +1,9 @@
 import numpy as np
 import nltk
 from nltk.tokenize import word_tokenize
-from nltk.stem.snowball import FrenchStemmer
+from nltk.stem.snowball import SnowballStemmer
 
-stemmer = FrenchStemmer()
+stemmer = SnowballStemmer(language='french')
 
 def tokenize(sentence):
     """

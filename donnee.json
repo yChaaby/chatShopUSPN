@@ -26,7 +26,7 @@
       },
       {
         "tag": "au revoir",
-        "patterns": ["Au revoir", "À plus tard", "Bonne journée", "Adieu", "À bientôt"],
+        "patterns": ["Au revoir", "À plus tard", "Bonne journée", "Adieu", "À bientôt","A+"],
         "responses": [
           "À bientôt, merci de votre visite",
           "Bonne journée",
@@ -43,6 +43,8 @@
       {
         "tag": "articles",
         "patterns": [
+          "article",
+          "vendre",
           "Quels articles avez-vous ?",
           "Quels types d'articles avez-vous ?",
           "Que vendez-vous ?",
@@ -58,6 +60,9 @@
       {
         "tag": "paiements",
         "patterns": [
+          "carte",
+          "carte de credit",
+          "paiement",
           "Acceptez-vous les cartes de crédit ?",
           "Acceptez-vous Mastercard ?",
           "Puis-je payer avec Paypal ?",
@@ -73,10 +78,12 @@
       {
         "tag": "livraison",
         "patterns": [
-          "Combien de temps prend la livraison ?",
-          "Combien de temps prend l'expédition ?",
-          "Quand vais-je recevoir ma livraison ?",
-          "Quels sont vos délais de livraison ?",
+          "livraison",
+          "Expédition",
+          "Combien de temps prend la livraison?",
+          "Combien de temps prend l'expédition?",
+          "Quand vais-je recevoir ma livraison?",
+          "Quels sont vos délais de livraison?",
           "Livrez-vous le week-end ?"
         ],
         "responses": [
@@ -86,22 +93,10 @@
         ]
       },
       {
-        "tag": "drôle",
-        "patterns": [
-          "Raconte-moi une blague !",
-          "Dis-moi quelque chose de drôle !",
-          "Connais-tu une blague ?",
-          "Je pourrais utiliser une bonne blague !"
-        ],
-        "responses": [
-          "Pourquoi l'hipster s'est-il brûlé la bouche ? Il a bu le café avant qu'il ne soit cool.",
-          "Que dit le bison quand son fils part à l'université ? Bison.",
-          "Pourquoi les poissons n'ont-ils jamais été de bons musiciens ? Parce qu'ils finissent toujours dans des filets !"
-        ]
-      },
-      {
         "tag": "aide",
         "patterns": [
+          "aide",
+          "assistance",
           "Pouvez-vous m'aider ?",
           "J'ai besoin d'aide.",
           "Aidez-moi s'il vous plaît.",
@@ -117,6 +112,7 @@
       {
         "tag": "produits",
         "patterns": [
+          "produit",
           "Quels produits recommandez-vous ?",
           "Quels sont vos produits les plus populaires ?",
           "Quel produit est le meilleur ?",
@@ -130,18 +126,70 @@
         ]
       },
       {
+        "tag": "feedback",
+        "patterns": [
+          "avis",
+          "retour",
+          "Comment puis-je donner mon avis ?",
+          "Accueillez-vous les retours d'information ?",
+          "Puis-je partager mes pensées avec vous ?"
+        ],
+        "responses": [
+          "Nous apprécions vos retours d'information et sommes reconnaissants de vous entendre ! Vous pouvez nous fournir des retours d'information via le formulaire de retour d'information de notre site web ou en contactant directement notre équipe de support client. Vos commentaires nous aident à améliorer nos services et nos offres."
+        ]
+      },
+      {
+        "tag": "info_produits",
+        "patterns": [
+          "Quels produits vendez-vous ?",
+          "Pouvez-vous me parler de vos produits ?",
+          "Quels sont les produits disponibles ?"
+        ],
+        "responses": [
+          "Nous proposons une large gamme de produits, y compris des vêtements, des accessoires, des livres, des appareils électroniques, et plus encore. N'hésitez pas à explorer notre site web pour voir notre catalogue complet."
+        ]
+      },
+      {
+        "tag": "politique_retour",
+        "patterns": [
+          "remboursement",
+          "Quelle est votre politique de retour ?",
+          "Puis-je retourner un article ?",
+          "Comment puis-je demander un remboursement ?"
+        ],
+        "responses": [
+          "Notre politique de retour vous permet de retourner les articles dans les 30 jours suivant l'achat pour un remboursement complet ou un échange. Veuillez consulter notre page de retours pour plus d'informations sur la manière d'initier un retour ou de demander un remboursement."
+        ]
+      },
+      {
+        "tag": "heure_ouverture",
+        "patterns": [
+          "heure",
+          "Ouverture",
+          "horaires",
+          "Quels sont vos horaires d'ouverture ?",
+          "Quand êtes-vous ouverts ?",
+          "À quelle heure fermez-vous ?"
+        ],
+        "responses": [
+          "Nos horaires d'ouverture sont du lundi au vendredi de 9h00 à 17h00. Nous sommes fermés le week-end et les jours fériés."
+        ]
+      },
+
+      {
         "tag": "question_specifique",
         "patterns": [
+          "promotion",
+          "offre",
+          "bon plan",
+          "reduction",
           "Pouvez-vous me dire si vous avez des promotions en ce moment ?",
           "Y a-t-il des réductions disponibles actuellement ?",
           "Avez-vous des offres spéciales en ce moment ?",
           "Quelles sont vos offres actuelles ?"
         ],
         "responses": [
-          "Oui, nous avons actuellement des promotions sur certains articles.",
-          "Nous avons des offres spéciales en cours. Vous pouvez les consulter sur notre site Web.",
-          "Nos réductions actuelles sont affichées sur notre site Web.",
-          "Consultez nos offres spéciales en ligne pour les dernières promotions."
+          "Oups ! Veuillez consulter notre site internet pour plus d'informations sur nos promotions et offres."
         ]
       }
     ]
