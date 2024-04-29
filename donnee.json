@@ -25,6 +25,20 @@
         ]
       },
       {
+        "tag": "présentation_boutique",
+        "patterns": [
+          "Pouvez-vous me présenter la boutique ?",
+          "Quelle est l'histoire de la boutique ?",
+          "Quels sont les principes de la boutique ?",
+          "Qui se cache derrière la boutique ?",
+          "Qu'est-ce qui rend cette boutique spéciale ?"
+        ],
+        "responses": [
+          "Bien sûr ! Notre boutique en ligne de l'Université Sorbonne Paris Nord propose une large gamme de produits allant des vêtements aux accessoires, en passant par les livres et les articles électroniques. Notre mission est de fournir des produits de qualité qui reflètent l'esprit et l'identité de notre université. Notre équipe est dévouée à offrir une expérience de shopping exceptionnelle à nos clients. N'hésitez pas à explorer notre catalogue pour découvrir nos produits uniques !"
+        ]
+      }
+      ,
+      {
         "tag": "au revoir",
         "patterns": ["Au revoir", "À plus tard", "Bonne journée", "Adieu", "À bientôt","A+"],
         "responses": [
@@ -52,9 +66,10 @@
           "Des idées sur ce que vous avez à offrir ?"
         ],
         "responses": [
-          "Nous vendons du café et du thé",
-          "Nous avons du café et du thé",
-          "Nous proposons une variété de café et de thé."
+          "Nous vendons un sweat à capuche beige avec logo Université Sorbonne Paris Nord, un stylo en métal rose gold et bleu avec logo Université Sorbonne Paris Nord, un carnet bleu avec logo design Université Sorbonne Paris Nord, un sweat à capuche bleu avec logo Université Sorbonne Paris Nord SO floqué, et un totebag bleu avec logo design Université Sorbonne Paris Nord floqué.",
+          "Vous pouvez acheter un sweat à capuche beige avec le logo de l’Université Sorbonne Paris Nord, un élégant stylo en métal rose gold et bleu portant le même logo, et un carnet bleu au design spécifique à l’Université.",
+          "Nos articles incluent un sweat à capuche beige floqué du logo de l’Université Sorbonne Paris Nord, un stylo en métal rose gold et bleu orné du même logo, ainsi qu’un carnet bleu au design exclusif de l’Université.",
+          "Nous mettons en vente un sweat à capuche beige floqué du logo de l’Université Sorbonne Paris Nord, ainsi qu’un stylo en métal rose gold et bleu arborant le même logo. De plus, nous proposons un carnet bleu au design mettant en avant l’identité de l’Université."
         ]
       },
       {
@@ -150,15 +165,78 @@
         ]
       },
       {
-        "tag": "politique_retour",
+        "tag": "prix_carnet",
+        "patterns": ["prix Carnet",
+          "combien coûte le carnet ?",
+          "tarif Carnet",
+          "carnet",
+          "prix du carnet"],
+        "responses": ["Le prix du carnet est de 3,50 €"]
+      },
+      {
+        "tag": "prix_stylo",
+        "patterns": ["prix Stylo",
+          "combien coûte le stylo ?",
+          "tarif Stylo",
+          "stylo"],
+        "responses": ["Le prix du stylo est de 2,00 €"]
+      },
+      {
+        "tag": "prix_sweat_beige",
+        "patterns": ["prix Sweat à capuche beige",
+          "combien coûte le sweat à capuche beige ?",
+          "tarif Sweat à capuche beige",
+          "sweat à capuche beige"],
+        "responses": ["Le prix du sweat à capuche beige est de 20,00 €"]
+      },
+      {
+        "tag": "prix_sweat_bleu",
+        "patterns": ["prix Sweat à capuche bleu",
+          "combien coûte le sweat à capuche bleu ?",
+          "tarif Sweat à capuche bleu",
+          "sweat à capuche bleu"],
+        "responses": ["Le prix du sweat à capuche bleu est de 20,00 €"]
+      },
+      {
+        "tag": "prix_sweat_SO_bleu",
+        "patterns": ["prix Sweat à capuche SO bleu",
+          "combien coûte le sweat à capuche SO bleu ?",
+          "tarif Sweat à capuche SO bleu",
+           "sweat à capuche SO bleu"],
+        "responses": ["Le prix du sweat à capuche SO bleu est de 20,00 €"]
+      },
+      {
+        "tag": "prix_sweat_SO_sable",
+        "patterns": ["prix Sweat à capuche SO sable", "combien coûte le sweat à capuche SO sable ?", "tarif Sweat à capuche SO sable", "prix du sweat à capuche SO sable"],
+        "responses": ["Le prix du sweat à capuche SO sable est de 20,00 €"]
+      },
+      {
+        "tag": "prix_totebag",
+        "patterns": ["prix Totebag", "combien coûte le totebag ?", "tarif Totebag", "prix du totebag","totebag"],
+        "responses": ["Le prix du totebag est de 3,50 €"]
+      },
+      {
+        "tag": "prix_tour_cou",
+        "patterns": ["prix Tour de cou + porte-badge",
+          "cou + porte-badge",
+          "combien coûte le tour de cou + porte-badge ?", "tarif Tour de cou + porte-badge", "prix du tour de cou + porte-badge"],
+        "responses": ["Le prix du tour de cou + porte-badge n'est pas spécifié. Veuillez nous contacter pour plus d'informations."]
+      },
+      {
+        "tag": "prix_articles",
         "patterns": [
-          "remboursement",
-          "Quelle est votre politique de retour ?",
-          "Puis-je retourner un article ?",
-          "Comment puis-je demander un remboursement ?"
+          "prix",
+          "prix articles",
+          "combien coûtent les articles",
+          "combien coûte tout ?",
+          "comment sont les tarifs ?",
+          "les tarifs",
+          "combien coûte chaque article",
+
+          "combien"
         ],
         "responses": [
-          "Notre politique de retour vous permet de retourner les articles dans les 30 jours suivant l'achat pour un remboursement complet ou un échange. Veuillez consulter notre page de retours pour plus d'informations sur la manière d'initier un retour ou de demander un remboursement."
+          "Voici les prix de nos articles :\nCarnet : 3,50 €\nStylo : 2,00€\nSweat à capuche bleu : 20,00 €\nSweat à capuche SO bleu : 20,00 €\nSweat à capuche SO sable : 20,00 €\nTotebag : 3,50 €\nTour de cou + porte-badge : prix sur demande"
         ]
       },
       {

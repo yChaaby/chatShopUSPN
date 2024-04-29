@@ -26,17 +26,8 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = "Sam"
-print("Let's chat! (type 'quit' to exit)")
-while True:
-    
-    # sentence = "do you use credit cards?"
-    sentence = input("user_name: ")
-    if sentence.lower() in ["quit","exit","quitter"]:
-        break
-    #if len(sentence.split(" "))==1:
-    #    print("Sam: veuillez préciser le contexte")
-    #     continue
-    sentence = tokenize(sentence)
+def get_response(msg):
+    sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
@@ -52,7 +43,6 @@ while True:
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 pass
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
-    else:
-        pass
-        print(f"{bot_name}: I do not understand...")
+                return random.choice(intent['responses'])
+    
+    return "Je suis désolé, je n'ai pas compris votre demande. Pouvez-vous reformuler votre question ou poser une autre demande ?..."
