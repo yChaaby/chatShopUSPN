@@ -6,10 +6,10 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
-from nltk_utils import bag_of_words, tokenize, stem, flatten_list
+from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 
-with open('donnee.json', 'r') as f:
+with open('intents.json', 'r') as f:
     intents = json.load(f)
 
 all_words = []
@@ -31,14 +31,17 @@ for intent in intents['intents']:
 # stem and lower each word
 ignore_words = ['?', '.', '!']
 all_words = [stem(w) for w in all_words if w not in ignore_words]
-all_words = flatten_list(all_words)
+#all_words = flatten_list(all_words)
 # remove duplicates and sort
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
 
+"""
 print(len(xy), "patterns")
 print(len(tags), "tags:", tags)
 print(len(all_words), "unique stemmed words:", all_words)
+
+"""
 
 # create training data
 X_train = []
@@ -61,7 +64,7 @@ learning_rate = 0.001
 input_size = len(X_train[0])
 hidden_size = 8
 output_size = len(tags)
-print(input_size, output_size)
+#print(input_size, output_size)
 
 class ChatDataset(Dataset):
 

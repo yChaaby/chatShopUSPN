@@ -5,7 +5,6 @@
         "patterns": [
           "Salut",
           "Bonjour",
-          "Comment ça va",
           "Est-ce qu'il y a quelqu'un ?",
           "Bonjour",
           "Bonne journée",
@@ -15,7 +14,7 @@
           "Bonjour tout le monde"
         ],
         "responses": [
-          "Salut :-)",
+          "Salut :-)",   
           "Bonjour, merci de votre visite",
           "Bonjour, que puis-je faire pour vous ?",
           "Bonjour, comment puis-je vous aider ?",
@@ -25,8 +24,8 @@
         ]
       },
       {
-        "tag": "au revoir",
-        "patterns": ["Au revoir", "À plus tard", "Bonne journée", "Adieu", "À bientôt"],
+        "tag": "revoir",
+        "patterns": ["Au revoir", "À plus tard", "Bonne journée", "Adieu", "À bientôt","A+"],
         "responses": [
           "À bientôt, merci de votre visite",
           "Bonne journée",
