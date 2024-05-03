@@ -31,7 +31,9 @@
           "Quelle est l'histoire de la boutique ?",
           "Quels sont les principes de la boutique ?",
           "Qui se cache derrière la boutique ?",
-          "Qu'est-ce qui rend cette boutique spéciale ?"
+          "Qu'est-ce qui rend cette boutique spéciale ?",
+          "présentation",
+          "présenter"
         ],
         "responses": [
           "Bien sûr ! Notre boutique en ligne de l'Université Sorbonne Paris Nord propose une large gamme de produits allant des vêtements aux accessoires, en passant par les livres et les articles électroniques. Notre mission est de fournir des produits de qualité qui reflètent l'esprit et l'identité de notre université. Notre équipe est dévouée à offrir une expérience de shopping exceptionnelle à nos clients. N'hésitez pas à explorer notre catalogue pour découvrir nos produits uniques !"
@@ -253,7 +255,24 @@
           "Nos horaires d'ouverture sont du lundi au vendredi de 9h00 à 17h00. Nous sommes fermés le week-end et les jours fériés."
         ]
       },
-
+      {
+        "tag": "creation_compte",
+        "patterns": [
+            "Créer un compte",
+            "Inscription",
+            "S'inscrire",
+            "Nouveau compte",
+            "compte",
+            "Enregistrer un compte"
+        ],
+        "responses": [
+            "Pour créer un compte utilisateur, veuillez cliquez sur *Créer mon compte*,fournir les informations suivantes : *nom*, *prénom*, *adresse e-mail* et *mot de passe*.",
+            "Pour vous inscrire et créer un compte, veuillez cliquez sur *Créer mon compte*,fournir les détails requis : *nom*, *prénom*, *adresse e-mail* et *mot de passe*.",
+            "Vous souhaitez créer un nouveau compte utilisateur ? Veuillez cliquez sur *Créer mon compte*,saisir votre *nom*, *prénom*, *adresse e-mail* et *mot de passe* pour vous inscrire.",
+            "Pour procéder à l'inscription et créer un compte utilisateur, veuillez cliquez sur *Créer mon compte* fournir les informations demandées : *nom*, *prénom,* *adresse e-mail* et *mot de passe*."
+        ]
+    },
+    
       {
         "tag": "question_specifique",
         "patterns": [
